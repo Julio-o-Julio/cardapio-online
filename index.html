@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamburgeria Dev</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -111,10 +116,13 @@
     </div>
 
     <div
+      id="modal-cart"
       class="bg-black/60 w-full h-full fixed top-0 left-0 z-20 items-center justify-center hidden"
     >
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[640px]">
-        <h2 class="text-center font-bold text-2xl mb-2 font-poppins">Meu carrinho</h2>
+        <h2 class="text-center font-bold text-2xl mb-2 font-poppins">
+          Meu carrinho
+        </h2>
 
         <div id="cart-items" class="flex flex-col justify-between mb-2"></div>
 
@@ -155,6 +163,10 @@
       </button>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
